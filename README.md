@@ -21,7 +21,7 @@ click on the line to see the project
 
 ## Installation Instructions
 
-to run the project local on you system
+to run the project locally on your system
 
 
 follow this steps
@@ -55,4 +55,4 @@ In case of project is not running and throuing *openssl* error
     "eject": "react-scripts eject"
   },
 ```
-- Note: It's just a temprory solution for run project 
+- Note: It's just a temprory solution for run the project 
