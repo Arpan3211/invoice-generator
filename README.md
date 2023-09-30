@@ -1,36 +1,58 @@
-# Invoice Generator - React App
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-An Invoice creator project built with React. Add itemized items, configure quantity, prices, tax rates and discounts. Download Invoice as PDFs to your device. Uses [jspdf-react](https://www.npmjs.com/package/jspdf-react) to capture the data from the modal and covert it from canvas -> pdf.
+# Invoice Generator ( React - Redux )
 
-### Live Demo
-https://invoice-generator-react.netlify.app/
+It's a simple invoice management system build with the react.js and state is managed with the help of Redux 
+ - The user can create a invoices and download the invoices.
+ - All the invoices will save on the localstorage.
+ - List of all invoices created by user will be showen in the home page with feature of [ view , Edit , Delete , Copy ].
 
-### Screenshots
-<img src="https://i.imgur.com/wRetnxk.png" style="max-width: 100px; width: 100%; height: auto;">
-<img src="https://i.imgur.com/AZChaei.png" style="max-width: 100px; width: 100%; height: auto;">
-<img src="https://i.imgur.com/Bz3K3DE.png" style="max-width: 100px; width: 100%; height: auto;">
 
-### Installation
 
+## Deployment
+
+click on the line to see the project
+
+
+
+- https://invoice-generator-system.netlify.app/
+
+
+
+
+## Installation Instructions
+
+to run the project local on you system
+
+
+follow this steps
+
+1) clone the repository
+
+```base
+git clone https://github.com/Arpan3211/invoice-generator.git
 ```
-git clone https://github.com/johnuberbacher/invoice-generator
 
+2) Install necessary packages & dependances
+```base
 npm install
-
-npm start / npm run build
 ```
+3) start the local host 
+```base
+npm start 
+```
+ 
+**optional**
 
-### To-Do
-- [x] Finish parsing data into Preview Modal
+In case of project is not running and throuing *openssl* error 
 
-- [x] Currency Picker
+- Replace you react start script with this *"--openssl-legacy-provider"*
 
-- [x] Calculate Tax and Discounts
-
-- [ ] Store invoices in Firebase DB
-
-
-### Meta
-
-John Uberbacher – [johnuberbacher.com](https://johnuberbacher.com)
+```base
+"scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+```
+- Note: It's just a temprory solution for run project 
